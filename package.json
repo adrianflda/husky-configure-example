@@ -8,7 +8,7 @@
   "private": false,
   "scripts": {
     "start": "node index.js",
-    "test": "echo 'No test' ",
+    "test": "jest",
     "hooks:pre-commit": "node ./hooks/pre-commit.js",
     "hooks:pre-push": "node ./hooks/pre-push.js"
   },
@@ -21,5 +21,9 @@
   "dependencies": {
     "husky": "^4.3.0",
     "shelljs": "^0.8.4"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "pretty-format": "^26.4.2"
   }
 }
