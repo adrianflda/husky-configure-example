@@ -13,8 +13,8 @@
     "hooks:pre-push": "node ./hooks/pre-push.js"
   },
   "husky": {
-    "pre-commit": "npm run hooks:pre-commit",
-    "pre-push": "npm run hooks:pre-push"
+    "pre-commit": "yarn test && yarn run hooks:pre-commit",
+    "pre-push": "yarn test && yarn run hooks:pre-push"
   },
   "dependencies": {
     "husky": "^4.3.0"
