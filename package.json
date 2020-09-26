@@ -1,0 +1,22 @@
+{
+  "name": "husky-configure-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:adrianflda/husky-configure-example.git",
+  "author": "Adrian <adrian.flda@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo 'No test' ",
+    "hooks:pre-commit": "node ./hooks/pre-commit.js",
+    "hooks:pre-push": "node ./hooks/pre-push.js"
+  },
+  "husky": {
+    "pre-commit": "npm run hooks:pre-commit",
+    "pre-push": "npm run hooks:pre-push"
+  },
+  "dependencies": {
+    "husky": "^4.3.0"
+  }
+}
